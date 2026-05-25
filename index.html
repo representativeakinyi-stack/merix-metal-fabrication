@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metal Fabrication & Welding | Pangani, Nairobi</title>
+  <style>
+    :root {
+      --bg: #111;
+      --text: #151515;
+      --light: #f5f5f5;
+      --white: #ffffff;
+      --brand: #ff6a00;
+      --brand-dark: #cc5600;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--bg);
+      color: var(--white);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #ff6a00, #cc5600);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-top: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .service {
+      background: var(--light);
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contact div {
+      background: var(--light);
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      background: var(--bg);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    a.btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1rem;
+      background: var(--brand);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    a.btn:hover {
+      background: var(--brand-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MetalWorks Nairobi</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Expert Metal Fabrication & Welding</h2>
+    <p>We specialize in gates, grills, structural steel, repairs & installations.</p>
+    <!-- Replace "card.jpg" with your actual image file -->
+    <img src="card.jpg" alt="Business card showing services and contacts" />
+    <div>
+      <a class="btn" href="tel:+254701298860">Call 0701298860</a>
+      <a class="btn" href="tel:+254702047829">Call 0702047829</a>
+      <a class="btn" href="mailto:omondimerix22@gmail.com">Email Us</a>
+      <!-- 🔗 Link to Services section -->
+      <a class="btn" href="#services">View Our Services</a>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Metal Fabrication</h3>
+        <p>Custom metal structures and components built to last.</p>
+      </div>
+      <div class="service">
+        <h3>Arc & Gas Welding</h3>
+        <p>Reliable welding for all types of metalwork.</p>
+      </div>
+      <div class="service">
+        <h3>Gates & Grill Works</h3>
+        <p>Secure and stylish gates, window grills, and barriers.</p>
+      </div>
+      <div class="service">
+        <h3>Structural Steel Works</h3>
+        <p>Steel frames, beams, and supports for buildings and projects.</p>
+      </div>
+      <div class="service">
+        <h3>Repairs & Installations</h3>
+        <p>On-site fixes and installations for metal structures.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <div>
+        <h3>Phone</h3>
+        <p><a href="tel:+254701298860">0701298860</a></p>
+        <p><a href="tel:+254702047829">0702047829</a></p>
+      </div>
+      <div>
+        <h3>Email</h3>
+        <p><a href="mailto:omondimerix22@gmail.com">omondimerix22@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Location</h3>
+        <p>Pangani, Nairobi</p>
+      </div>
+      <div>
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/254701298860" target="_blank">Chat with us</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> MetalWorks Nairobi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
